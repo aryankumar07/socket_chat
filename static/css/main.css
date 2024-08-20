@@ -1,0 +1,124 @@
+/* General container for centering content */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the content is centered vertically */
+    background-color: #f7f7f7; /* Light background for better contrast */
+    margin: 0;
+}
+
+/* Styling for the form container */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Increase gap for better spacing */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the join room input and button */
+.join {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px; /* Add some space between the input and the button */
+}
+
+.join input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.join button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join button:hover {
+    background-color: #0056b3;
+}
+
+/* Full-width button for creating a room */
+.create-btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+    background-color: #218838;
+}
+
+/* Message box container */
+.message-box {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 800px; /* Restrict maximum width */
+}
+
+/* Scrollable message area */
+.messages {
+    overflow-y: scroll;
+    flex: 1;
+    padding: 15px;
+}
+
+/* Input area for sending messages */
+.inputs {
+    padding: 15px;
+    display: flex;
+    gap: 10px; /* Add space between the input and the button */
+    border-top: 1px solid #ddd;
+}
+
+/* Centered heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the message input */
+#message {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Text container for messages */
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Muted text for timestamps, etc. */
+.muted {
+    font-size: 12px;
+    color: #6c757d;
+}
